@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            background-color: #181818;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            background-color: #181818;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header .search {
+            display: flex;
+            align-items: center;
+            background-color: #282828;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        .header .search input {
+            background-color: transparent;
+            border: none;
+            color: white;
+            margin-left: 8px;
+        }
+
+        .header .search input:focus {
+            outline: none;
+        }
+
+        .header .actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .actions .icon {
+            margin-left: 16px;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .left-side {
+            width: 30%;
+            padding: 20px;
+            background-color: #282828;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .left-side h2 {
+            margin-bottom: 16px;
+        }
+
+        .left-side .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .left-side .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+        }
+
+        .left-side .profile p {
+            margin: 0;
+        }
+
+        .left-side .settings {
+            margin-bottom: 16px;
+        }
+
+        .left-side .settings ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .left-side .settings li {
+            margin-bottom: 8px;
+        }
+
+        .left-side .settings li input {
+            margin-right: 8px;
+        }
+
+        .right-side {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .right-side .card {
+            padding: 20px;
+            background-color: #282828;
+            border-radius: 8px;
+        }
+
+        .right-side .card h2 {
+            margin-bottom: 16px;
+        }
+
+        .right-side .card .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .right-side .card .info p {
+            margin: 0;
+        }
+
+        .right-side .card .info span {
+            color: #00e098;
+        }
+
+        .right-side .card .stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+        }
+
+        .right-side .card .stats .stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #00e098;
+            background-color: #282828;
+        }
+
+        .right-side .card .stats .stat i {
+            font-size: 32px;
+            color: #00e098;
+        }
+
+        .right-side .card .stats .stat p {
+            margin: 8px 0 0 0;
+        }
+
+        .right-side .card .stats .stat .progress {
+            margin-top: 8px;
+            width: 100%;
+            height: 4px;
+            background-color: #383838;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .right-side .card .stats .stat .progress .fill {
+            height: 100%;
+            background-color: #00e098;
+            border-radius: 10px;
+        }
+
+        .right-side .card .info .social {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-side .card .info .social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #282828;
+            color: #00e098;
+            margin-left: 8px;
+            text-decoration: none;
+        }
+
+        .right-side .card .info .social a:hover {
+            background-color: #00e098;
+            color: #282828;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>/ Profile</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Type here...">
+        </div>
+        <div class="actions">
+            <a href="#" class="icon">Sign in</a>
+            <a href="#" class="icon"><i class="fas fa-bell"></i></a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="left-side">
+            <h2>Welcome back!</h2>
+            <p>Nice to see you, Mark Johnson!</p>
+            <div class="profile">
+                <img src="https://www.freeiconspng.com/uploads/profile-icon-png-10.png" alt="Profile picture">
+                <p>Mark Johnson</p>
+            </div>
+            <p>mark@simmmple.com</p>
+            <div class="settings">
+                <h3>Platform Settings</h3>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="follow">
+                        <label for="follow">Email me when someone follows me</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="answer">
+                        <label for="answer">Email me when someone answers on my post</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="mention">
+                        <label for="mention">Email me when someone mentions me</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="card">
+                <h2>Car Informations</h2>
+                <p>Hello, Mark Johnson! Your Car is ready.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <i class="fas fa-bolt"></i>
+                        <p>68%</p>
+                        <p>Current Load</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-battery-full"></i>
+                        <p>76%</p>
+                        <p>Battery Health</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-car-alt"></i>
+                        <p>+20%</p>
+                        <p>Efficiency</p>
+                        <div class="progress">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-gas-pump"></i>
+                        <p>163W/km</p>
+                        <p>Consumption</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-road"></i>
+                        <p>1.342km</p>
+                        <p>This Week</p>
+                        <div class="progress">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <p>Oh 58 min</p>
+                        <p>Time to full charge</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Projects</h2>
+                <p>Architects design houses</p>
+                <div class="projects">
+                    <img src="https://www.freeiconspng.com/uploads/cars-png-3.png" alt="Project 1">
+                    <img src="https://www.freeiconspng.com/uploads/cars-png-4.png" alt="Project 2">
+                </div>
+            </div>
+            <div class="card">
+                <h2>Profile Information</h2>
+                <p>Hi, I'm Mark Johnson. Decisions: If you can't decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).</p>
+                <div class="info">
+                    <p>Full Name: <span>Mark Johnson</span></p>
+                    <p>Mobile: <span>(44) 1231234123</span></p>
+                    <p>Email: <span>mark@simmmple.com</span></p>
+                    <p>Location: <span>United States</span></p>
+                    <div class="social">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+</body>
+</html>

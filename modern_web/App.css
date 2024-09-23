@@ -1,0 +1,275 @@
+.app {
+    display: flex;
+    height: 100vh;
+    background-color: #181818;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #282828;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-item.active {
+    background-color: #333;
+  }
+  
+  .sidebar-item i {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .sidebar-item span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-title h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  
+  .search-bar i {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .search-bar input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .user-actions i {
+    margin-right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .col-md-3 {
+    flex: 0 0 25%;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 33.33%;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 50%;
+  }
+  
+  .card {
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-header {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .card-header i {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .card-header span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .card-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-value {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .card-growth {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .progress-bar {
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar-value {
+    height: 100%;
+    background-color: #4CAF50;
+    transition: all 0.3s ease;
+  }
+  
+  .progress-bar-label {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .card-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .safety-score {
+    display: flex;
+    align-items: center;
+  }
+  
+  .safety-score span {
+    font-size: 36px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  
+  .progress-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #282828;
+    border: 4px solid #4CAF50;
+    position: relative;
+  }
+  
+  .progress-circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+  }
+  
+  .footer-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-button:hover {
+    opacity: 0.8;
+  }
+  
+  .footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-right span {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  
+  /* Chart styles */
+  #salesChart,
+  #activeUsersChart {
+    width: 100%;
+  }
+  
+  /* Animation styles */
+  .card-value,
+  .card-growth,
+  .progress-bar-value,
+  .safety-score span {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

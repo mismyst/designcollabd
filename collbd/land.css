@@ -1,0 +1,128 @@
+/* Body and Basic Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #004466;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+  background-color: #003344;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #002233;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero .logo {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn-get-started {
+  background-color: #f5cf6b;
+  color: #004466;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero .btn-get-started:hover {
+  background-color: #e6b956;
+}
+
+/* Get Started Section */
+.get-started {
+  padding: 50px;
+  background-color: #003344;
+}
+
+.get-started h2 {
+  margin-bottom: 1rem;
+}
+
+.get-started p {
+  font-size: 1.1rem;
+  color: #f5cf6b;
+}
+
+/* Sections */
+.sections {
+  padding: 50px 20px;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+.section h2 {
+  font-size: 2rem;
+}
+
+.section p {
+  font-size: 1rem;
+  color: #dcdcdc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .get-started {
+    padding: 20px;
+  }
+}

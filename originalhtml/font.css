@@ -1,0 +1,15 @@
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/AntonRegular.ttf");
+    font-family: "Anton";
+    font-weight: 400;
+  }
+  @font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/AntonSCRegular.ttf");
+    font-family: "Anton SC";
+    font-weight: 400;
+  }
+  

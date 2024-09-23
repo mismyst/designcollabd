@@ -1,0 +1,102 @@
+/* Ensure full height for the background */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Vibrant gradient background */
+body {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(55,55,124,1) 35%, rgba(12,210,195,0.98) 100%);
+}
+
+/* Transparent navbar with centered content */
+.nav-bar-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and nav links */
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Style for the logo */
+.image img {
+    height: 50px; /* Adjust logo size */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Centering the nav links */
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin: 0 auto; /* Center the nav links */
+    text-align: center;
+}
+
+.nav-links a {
+    color: #000000; /* Black color for the links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #444444; /* Slightly lighter black on hover */
+}
+
+/* Main content layout */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px; /* Leave space for the fixed navbar */
+    padding: 50px 20px;
+}
+
+/* Left image */
+.left-content img {
+    width: 45%;
+    height: auto;
+}
+
+/* Right text content */
+.right-content {
+    width: 50%;
+    color: #ffffff;
+}
+.space-grotesk-content {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* You can change this to 300, 500, 600, or 700 */
+    font-style: normal;
+    color: #ffffff;
+    line-height: 1.6;
+}
+right-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
